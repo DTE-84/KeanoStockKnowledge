@@ -15,7 +15,7 @@ export default function Home() {
             src="/assets/KEANO SYSTEM_files/keylandingsignature.png"
             alt="Keano Wallis"
             fill
-            className="object-cover object-[75%_center] md:object-right opacity-40 mix-blend-luminosity"
+            className="object-cover object-[55%_center] opacity-40 mix-blend-luminosity"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* Ticker at the bottom of hero */}
-        <div className="absolute bottom-0 w-full z-20">
+        <div className="absolute bottom-0 left-0 w-full z-20">
           <StockTicker />
         </div>
       </section>
