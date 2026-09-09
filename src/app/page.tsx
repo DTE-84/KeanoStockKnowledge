@@ -15,7 +15,7 @@ export default function Home() {
             src="/assets/KEANO SYSTEM_files/keylandingsignature.png"
             alt="Keano Wallis"
             fill
-            className="object-cover object-center opacity-40 mix-blend-luminosity"
+            className="object-cover object-[75%_center] md:object-right opacity-40 mix-blend-luminosity"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
