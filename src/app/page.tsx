@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen flex flex-col justify-center overflow-hidden px-6 md:px-16 lg:px-32">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -23,23 +23,23 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="z-10 text-center px-6 max-w-4xl mt-20">
+        <div className="z-10 text-left max-w-3xl mt-20">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
             Master the Market with <span className="text-kinetic">Precision</span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-xl">
             Join Keano Wallis in navigating high-volatility setups. Proven metrics, transparent strategies, direct access.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <Link
               href="/memberships"
-              className="px-8 py-4 bg-kinetic text-background font-semibold rounded-full hover:bg-kinetic/90 transition-all flex items-center gap-2"
+              className="px-8 py-4 bg-kinetic text-background font-semibold rounded-full hover:bg-kinetic/90 transition-all flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               View Memberships <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/premium-access"
-              className="px-8 py-4 bg-card/80 backdrop-blur-md border border-white/10 text-foreground font-semibold rounded-full hover:bg-card transition-all"
+              className="px-8 py-4 bg-card/80 backdrop-blur-md border border-white/10 text-foreground font-semibold rounded-full hover:bg-card transition-all w-full sm:w-auto text-center"
             >
               The Inner Circle
             </Link>
