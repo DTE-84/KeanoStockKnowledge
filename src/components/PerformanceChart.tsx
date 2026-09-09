@@ -42,7 +42,7 @@ export default function PerformanceChart() {
             <Tooltip
               contentStyle={{ backgroundColor: '#0F172A', border: '1px solid #1E293B', borderRadius: '8px' }}
               itemStyle={{ color: '#10B981' }}
-              formatter={(value: number) => [`$${value.toLocaleString()}`, 'Portfolio Value']}
+              formatter={(value: any) => [`$${Number(value).toLocaleString()}`, 'Portfolio Value']}
             />
             <Line 
               type="monotone" 
