@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0F172A; /* Obsidian */
+  --foreground: #F8FAFC; /* Light text */
+  --card-bg: #1E293B; /* Charcoal */
+  --kinetic-green: #10B981;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-kinetic: var(--kinetic-green);
+  --color-card: var(--card-bg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
